@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="22.65215">
+<testcase classname="Login Vodafone portal" name="Login vodafone portal" time="22.65215">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at ecommerce.vodafone.step_definitions.Common.validate(Common.java:47)&#10;&#9;at ✽.Then I validate the &quot;welcome message&quot; in &quot;home&quot; page(src/resources/features/Vodafone.feature:9)&#10;"><![CDATA[Given I open the "vodafone_portal" url......................................passed
+Then I validate the "page title" in "login" page............................passed
+When I login the page.......................................................passed
+Then I validate the "welcome message" in "home" page........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at ecommerce.vodafone.step_definitions.Common.validate(Common.java:47)
+	at ✽.Then I validate the "welcome message" in "home" page(src/resources/features/Vodafone.feature:9)
+]]></failure>
+</testcase>
+</testsuite>

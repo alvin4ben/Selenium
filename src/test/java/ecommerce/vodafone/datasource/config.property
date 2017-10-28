@@ -1,0 +1,8 @@
+vodafone_portal=https://portal-pre.vodafone.com
+LoginpageTitle=COVE Login
+HomepageTitle=Vodafone Portal
+username=allwin.albert3@vodafone.com
+password=3edc$RFV
+chromeDriver=libs/chromedriver
+firefoxDriver=libs/geckodriver
+phantomjs=./libs/phantomjs
