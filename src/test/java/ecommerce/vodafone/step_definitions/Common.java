@@ -25,7 +25,6 @@ public class Common extends genericFunctions{
 
 	@Given("^I open the \"([^\"]*)\" url$")
 	public void open_url(String url) throws Throwable {
-		System.out.println(url);
 		driver.get(config.getPageURL(url));
 	}
 

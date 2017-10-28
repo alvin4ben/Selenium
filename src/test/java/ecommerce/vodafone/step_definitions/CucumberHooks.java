@@ -18,6 +18,8 @@ import ecommerce.vodafone.helpers.*;
 
 public class CucumberHooks{
 	public static WebDriver driver;
+	public static long start;
+	public static long finish;
 
 
 	@Before
@@ -71,5 +73,20 @@ public class CucumberHooks{
 		driver.quit();
 
 	}
+	
+	@Before("@login")
+	public void loginstarttime() {
+		start = System.currentTimeMillis();
+	}
+	
+	@After("@login")
+	public void loginloadtime() {
+		finish = System.currentTimeMillis();
+		
+		long TotalTime = (((finish - start)/1000)%60);
+		System.out.println("Total Time for vodafone portal login - "+TotalTime+" seconds"); 
 
+	}
+
+	
 }
