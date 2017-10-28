@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="32.336985">
-<testcase classname="Login Vodafone portal" name="Login vodafone portal" time="32.336985">
-<system-out><![CDATA[Given I open the "vodafone_portal" url......................................passed
-Then I validate the "page title" in "login" page............................passed
-When I login the page.......................................................passed
-Then I validate the "welcome message" in "home" page........................passed
-]]></system-out>
-</testcase>
-</testsuite>
