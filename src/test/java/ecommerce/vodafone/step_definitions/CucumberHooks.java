@@ -74,19 +74,19 @@ public class CucumberHooks{
 
 	}
 	
-	@Before("@login")
-	public void loginstarttime() {
-		start = System.currentTimeMillis();
-	}
-	
-	@After("@login")
-	public void loginloadtime() {
-		finish = System.currentTimeMillis();
-		
-		long TotalTime = (((finish - start)/1000)%60);
-		System.out.println("Total Time for vodafone portal login - "+TotalTime+" seconds"); 
-
-	}
+//	@Before("@login")
+//	public void loginstarttime() {
+//		start = System.currentTimeMillis();
+//	}
+//	
+//	@After("@login")
+//	public void loginloadtime() {
+//		finish = System.currentTimeMillis();
+//		
+//		long TotalTime = (((finish - start)/1000)%60);
+//		System.out.println("Total Time for vodafone portal login - "+TotalTime+" seconds"); 
+//
+//	}
 
 	
 }

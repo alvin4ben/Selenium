@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 
 import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.*;
+import ecommerce.vodafone.helpers.BusinessFunctions;
 import ecommerce.vodafone.helpers.configProperty;
 import ecommerce.vodafone.helpers.genericFunctions;
 import ecommerce.vodafone.pageobjects.*;
@@ -35,13 +36,15 @@ public class Common extends genericFunctions{
 			if(page.equals("login")) {
 				assertEquals(config.getPageTitle("LoginpageTitle"), driver.getTitle());
 			}else if (page.equals("home")) {
-				assertEquals(config.getPageTitle("LoginpageTitle"), driver.getTitle());
 			}
 			break;
-			
+
 		case "welcome message":
-			String welcome_text = getElementText(HomePage.WELCOME_MSG);
-			assertTrue(isContain(welcome_text,"allwin"));
+			if(page.equals("home")) {
+				String welcome_text = getElementText(HomePage.WELCOME_MSG);
+				assertTrue(isContain(welcome_text,"allwin"));
+				System.out.println(BusinessFunctions.endtime(Login.k));	
+			}
 			break;
 		default:
 			throw new IllegalArgumentException("case not matching");
